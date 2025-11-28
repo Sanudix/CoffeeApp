@@ -38,7 +38,6 @@ fun IntroScreen(onClick: () -> Unit = {}) {
             contentDescription = null,
             modifier = Modifier
                 .fillMaxWidth(),
-//            contentScale = ContentScale.FillBounds
         )
         Text(
             text = "Time for a coffee break....",
