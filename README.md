@@ -6,5 +6,5 @@
 
 ## Визуализация
 <img width="1247" height="856" alt="coffeeApp" src="https://github.com/user-attachments/assets/3733c897-066e-413c-aeb8-7a02914af513" />
-Видео с работой приложения:
-[coffeeApp_video.webm](https://github.com/user-attachments/assets/e27892aa-eae2-444e-b920-b4135404485a)
+Видео с работой приложения: [coffeeApp_video.webm](https://github.com/user-attachments/assets/19e7b149-0257-4cc6-a6ed-5f9893f5d3eb)
+
