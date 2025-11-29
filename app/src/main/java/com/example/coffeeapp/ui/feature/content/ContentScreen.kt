@@ -10,11 +10,11 @@ import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 @Preview
-fun ContentScreen() {
+fun ContentScreen(onBack: () -> Unit = {}) {
     Column(
         modifier = Modifier.fillMaxSize().background(Color.White)
     ) {
-        ContentHeader()
+        ContentHeader(onBack = onBack)
         DescriptionSection()
         PriceBar()
     }

@@ -11,7 +11,7 @@ class ContentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ContentScreen()
+            ContentScreen(onBack = { finish() })
         }
     }
 }
