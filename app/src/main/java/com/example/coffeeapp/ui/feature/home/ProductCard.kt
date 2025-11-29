@@ -2,6 +2,7 @@ package com.example.coffeeapp.ui.feature.home
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -33,12 +34,13 @@ import com.example.coffeeapp.R
 
 @Composable
 @Preview
-fun ProductCard() {
+fun ProductCard(onCardClick: () -> Unit = {}) {
     Card(
         modifier = Modifier
             .padding(all = 8.dp)
             .fillMaxSize()
-            .background(color = Color.White),
+            .background(color = Color.White)
+            .clickable{ onCardClick() },
     ) {
         Column(
             horizontalAlignment = Alignment.Start,

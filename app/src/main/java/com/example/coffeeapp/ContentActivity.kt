@@ -1,20 +1,17 @@
 package com.example.coffeeapp
 
-import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.example.coffeeapp.ui.feature.home.HomeScreen
+import androidx.appcompat.app.AppCompatActivity
+import com.example.coffeeapp.ui.feature.content.ContentScreen
 
-class MainActivity : ComponentActivity() {
+class ContentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            HomeScreen {
-                startActivity(Intent(this, ContentActivity::class.java))
-            }
+            ContentScreen()
         }
     }
 }
