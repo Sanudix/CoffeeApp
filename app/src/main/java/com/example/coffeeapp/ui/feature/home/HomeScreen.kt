@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun HomeScreen() {
+fun HomeScreen(onClick: () -> Unit = {}) {
     Scaffold(
         modifier = Modifier,
         topBar = {
@@ -46,7 +46,7 @@ fun HomeScreen() {
                 horizontalArrangement = Arrangement.spacedBy(16.dp),
             ) {
                 items(6) { item ->
-                    ProductCard()
+                    ProductCard(onCardClick = onClick)
                 }
             }
         }
